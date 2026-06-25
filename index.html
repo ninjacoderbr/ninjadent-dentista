@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaDent - Advanced Aesthetic Dentistry</title>
+    <meta name="description" content="Experience premium orthodontic and aesthetic dental care with before/after visual tracking and instant online appointment scheduling.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i data-lucide="shield-check"></i></span> NinjaDent
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#comparison">Smile Makeovers</a></li>
+                    <li><a href="#booking">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <a href="#booking" class="nav-btn">Schedule Visit</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>We Design Smiles <span>That Inspire</span></h1>
+            <p>Combining state-of-the-art clinical expertise with artistic precision to give you the beautiful, bright, healthy smile you deserve.</p>
+            <div class="hero-ctas">
+                <a href="#booking" class="btn-primary">Book Consultation</a>
+                <a href="#comparison" class="btn-secondary">View Results</a>
+            </div>
+        </div>
+        
+        <!-- Quick Stats / Cards -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="background: white; border: 1px solid var(--border-color); padding: 2rem; border-radius: 16px; display: flex; gap: 1.5rem; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.02);">
+                <div style="width: 50px; height: 50px; background-color: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+                    <i data-lucide="sparkles"></i>
+                </div>
+                <div>
+                    <h3 style="font-family: var(--font-pjs); font-weight: 700; font-size: 1.15rem;">Laser Whitening</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Up to 8 shades lighter in a single visit.</p>
+                </div>
+            </div>
+
+            <div style="background: white; border: 1px solid var(--border-color); padding: 2rem; border-radius: 16px; display: flex; gap: 1.5rem; align-items: center; box-shadow: 0 10px 20px rgba(0,0,0,0.02);">
+                <div style="width: 50px; height: 50px; background-color: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 1.5rem;">
+                    <i data-lucide="smile"></i>
+                </div>
+                <div>
+                    <h3 style="font-family: var(--font-pjs); font-weight: 700; font-size: 1.15rem;">Orthodontic Braces</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Perfect alignment with traditional or clear aligners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Smile Slider Section -->
+    <section class="comparison-section" id="comparison">
+        <h2 class="section-title">Smile Makeover Showcase</h2>
+        <p class="section-subtitle">Slide left and right to see the results of our braces orthodontic treatment and professional cleaning alignment.</p>
+        
+        <div class="slider-container" id="teethSlider">
+            <!-- BEFORE LAYER (underneath or clip-restricted) -->
+            <div class="slider-img before">
+                <div class="teeth-graphic">
+                    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Lips background -->
+                        <path d="M 50 150 Q 250 50 450 150 Q 250 280 50 150 Z" fill="#fda4af" stroke="#f43f5e" stroke-width="8" />
+                        <!-- Mouth Interior -->
+                        <path d="M 65 150 Q 250 80 435 150 Q 250 250 65 150 Z" fill="#4c0519" />
+                        <!-- Teeth - Yellow/Crooked & With Brackets (Before) -->
+                        <!-- Upper teeth -->
+                        <rect x="135" y="115" width="40" height="40" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2" transform="rotate(-4, 155, 135)" />
+                        <rect x="180" y="112" width="40" height="42" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2" transform="rotate(3, 200, 133)" />
+                        <rect x="225" y="110" width="50" height="45" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2" transform="rotate(-2, 250, 132)" />
+                        <rect x="280" y="112" width="40" height="42" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2" transform="rotate(-6, 300, 133)" />
+                        <rect x="325" y="115" width="40" height="40" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="2" transform="rotate(5, 345, 135)" />
+                        
+                        <!-- Lower teeth -->
+                        <rect x="155" y="170" width="30" height="30" rx="3" fill="#fde047" stroke="#ca8a04" stroke-width="2" transform="rotate(5, 170, 185)" />
+                        <rect x="190" y="171" width="35" height="32" rx="3" fill="#fde047" stroke="#ca8a04" stroke-width="2" transform="rotate(-4, 207, 187)" />
+                        <rect x="230" y="172" width="40" height="33" rx="3" fill="#fde047" stroke="#ca8a04" stroke-width="2" />
+                        <rect x="275" y="171" width="35" height="32" rx="3" fill="#fde047" stroke="#ca8a04" stroke-width="2" transform="rotate(3, 292, 187)" />
+                        <rect x="315" y="170" width="30" height="30" rx="3" fill="#fde047" stroke="#ca8a04" stroke-width="2" transform="rotate(-5, 330, 185)" />
+
+                        <!-- Orthodontic Braces (Before) -->
+                        <path d="M 120 135 L 380 135" stroke="#94a3b8" stroke-width="3" />
+                        <rect x="145" y="125" width="16" height="16" rx="2" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" />
+                        <rect x="192" y="125" width="16" height="16" rx="2" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" />
+                        <rect x="242" y="125" width="16" height="16" rx="2" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" />
+                        <rect x="292" y="125" width="16" height="16" rx="2" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" />
+                        <rect x="337" y="125" width="16" height="16" rx="2" fill="#cbd5e1" stroke="#475569" stroke-width="1.5" />
+                    </svg>
+                </div>
+                <span class="comparison-label label-before">Before Treatment</span>
+            </div>
+            
+            <!-- AFTER LAYER (clip-restricted width) -->
+            <div class="slider-img after">
+                <div class="teeth-graphic">
+                    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Lips background -->
+                        <path d="M 50 150 Q 250 50 450 150 Q 250 280 50 150 Z" fill="#fda4af" stroke="#f43f5e" stroke-width="8" />
+                        <!-- Mouth Interior -->
+                        <path d="M 65 150 Q 250 80 435 150 Q 250 250 65 150 Z" fill="#4c0519" />
+                        <!-- Teeth - Pure White & Aligned (After) -->
+                        <!-- Upper teeth -->
+                        <rect x="140" y="112" width="40" height="42" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="182" y="110" width="40" height="44" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="224" y="108" width="52" height="46" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="278" y="110" width="40" height="44" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="320" y="112" width="40" height="42" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        
+                        <!-- Lower teeth -->
+                        <rect x="155" y="170" width="30" height="30" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="187" y="170" width="36" height="32" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="225" y="170" width="50" height="33" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="277" y="170" width="36" height="32" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+                        <rect x="315" y="170" width="30" height="30" rx="3" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
+
+                        <!-- Shine sparkles -->
+                        <path d="M 120 90 L 125 75 L 140 70 L 125 65 L 120 50 L 115 65 L 100 70 L 115 75 Z" fill="#22d3ee" />
+                        <path d="M 370 80 L 373 70 L 383 67 L 373 64 L 370 54 L 367 64 L 357 67 L 367 70 Z" fill="#22d3ee" transform="scale(0.7) translate(150, 20)" />
+                    </svg>
+                </div>
+                <span class="comparison-label label-after">After Smile Makeover</span>
+            </div>
+
+            <!-- Handle elements -->
+            <div class="slider-handle">
+                <div class="slider-button">
+                    <i data-lucide="arrow-left-right"></i>
+                </div>
+            </div>
+
+            <!-- Invisible range control -->
+            <input type="range" class="slider-control" id="sliderControl" min="0" max="100" value="50">
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="booking">
+        <div class="booking-card">
+            <!-- Success overlay -->
+            <div class="booking-success-overlay" id="successOverlay">
+                <div class="success-icon-circle">
+                    <i data-lucide="check-circle2"></i>
+                </div>
+                <h3 class="success-title">Booking Confirmed!</h3>
+                <p class="success-text" id="successSummary">Your appointment has been successfully scheduled. We look forward to seeing you.</p>
+                <button class="btn-done" id="btnDone">Make Another Booking</button>
+            </div>
+
+            <!-- Normal Form -->
+            <h2 style="font-family: var(--font-pjs); font-weight: 700; font-size: 2.25rem; text-align: center; margin-bottom: 0.5rem;">Book an Appointment</h2>
+            <p style="color: var(--text-muted); text-align: center; margin-bottom: 3rem;">Secure your preferred consultation date and slot in seconds.</p>
+            
+            <form class="booking-form" id="bookingForm">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="patientName">Your Full Name</label>
+                    <input type="text" id="patientName" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="patientPhone">Contact Number</label>
+                    <input type="tel" id="patientPhone" class="form-control" placeholder="e.g. (123) 456-7890" required>
+                </div>
+
+                <!-- Treatment Service -->
+                <div class="form-group">
+                    <label for="serviceSelect">Select Treatment</label>
+                    <select id="serviceSelect" class="form-control" required>
+                        <option value="Orthodontic Braces">Orthodontic Braces Consult</option>
+                        <option value="Laser Teeth Whitening">Laser Teeth Whitening</option>
+                        <option value="General Clean & Polish">General Clean & Polish</option>
+                        <option value="Dental Implants">Dental Implants</option>
+                    </select>
+                </div>
+
+                <!-- Dentist -->
+                <div class="form-group">
+                    <label for="dentistSelect">Preferred Doctor</label>
+                    <select id="dentistSelect" class="form-control" required>
+                        <option value="Dr. Sarah Connor">Dr. Sarah Connor (Orthodontist)</option>
+                        <option value="Dr. Alex Smith">Dr. Alex Smith (Aesthetic Dentist)</option>
+                    </select>
+                </div>
+
+                <!-- Date picker -->
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date</label>
+                    <input type="date" id="appointmentDate" class="form-control" required>
+                </div>
+
+                <!-- Slots -->
+                <div class="form-group">
+                    <label>Preferred Time Slot</label>
+                    <div class="slots-container">
+                        <div class="slot-chip" data-slot="09:00 AM">09:00 AM</div>
+                        <div class="slot-chip" data-slot="10:30 AM">10:30 AM</div>
+                        <div class="slot-chip" data-slot="02:00 PM">02:00 PM</div>
+                        <div class="slot-chip" data-slot="04:30 PM">04:30 PM</div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-primary full-width" id="btnBookSubmit">Book My Visit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i data-lucide="shield-check"></i></span> NinjaDent
+                </a>
+                <p>Delivering aesthetic confidence and healthy teeth across the region.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#comparison">Smile Makeovers</a>
+                <a href="#booking">Book Appointment</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NinjaDent Clinical Orthodontics. All rights reserved.</p>
+            <p>Made with &hearts; by Antigravity</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
